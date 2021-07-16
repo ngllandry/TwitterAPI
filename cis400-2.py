@@ -3,11 +3,12 @@ import json
 import itertools
 import networkx as nx
 
+#must obtain own twitter api authentication
 def oauth_login():
-    CONSUMER_KEY = '3Qx0nlRZJI3O8Sr8zafcR554E'
-    CONSUMER_SECRET = '7d8uMNhVEpNukl3bLrTZ2YDWkXlRnMeefQWDQA104CrYAwD02s'
-    OAUTH_TOKEN = '1367551327337918470-dOeyx24LbVbOBGWQBV3kp5DvFrhwye'
-    OAUTH_TOKEN_SECRET = '65Ztwrt3r9iP206GAxhPOotP4CVWmsXXKzifspy766PF1'
+    CONSUMER_KEY = ''
+    CONSUMER_SECRET = ''
+    OAUTH_TOKEN = ''
+    OAUTH_TOKEN_SECRET = ''
 
     auth = twitter.oauth.OAuth(OAUTH_TOKEN, OAUTH_TOKEN_SECRET, CONSUMER_KEY, CONSUMER_SECRET)
     twitter_api = twitter.Twitter(auth=auth)
